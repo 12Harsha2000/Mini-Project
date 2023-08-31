@@ -36,7 +36,7 @@ export default function App() {
         key={image}
         className={`slide ${current === index ? 'active' : ''}`}
         >
-        <img src={image} alt="images" />
+        <img src={image} alt="images" style={{ display: 'block' }} />
         </div>
         ))}
 
