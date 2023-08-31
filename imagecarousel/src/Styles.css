@@ -14,6 +14,8 @@
 .slide img {
   width: 100%;
   height: auto;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
 }
 
 .left-arrow,
@@ -33,3 +35,6 @@
   right: 10px;
 }
 
+.slide img.active {
+  opacity: 1;
+}
