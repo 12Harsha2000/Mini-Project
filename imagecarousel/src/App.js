@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./App.css";
+import "./Styles.css";
 
 const images = [
   "https://images.pexels.com/photos/3836292/pexels-photo-3836292.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
@@ -22,7 +22,7 @@ export default function App() {
 
   return (
     <div>
-      <h2>Project 1: Carousel</h2>
+      <h2>Project : Carousel</h2>
       <div className="slider">
         <div className="left-arrow" onClick={prevSlide}>
           ⬅
@@ -30,16 +30,17 @@ export default function App() {
         <div className="right-arrow" onClick={nextSlide}>
           ⮕
         </div>
-        {images.map(
-          (image, index) =>
-            current === index && (
-              <div key={image} className="slide">
-                <img src={image} alt="images" />
-              </div>
-            )
-        )}
+
+        {images.map((image, index) => (
+        <div
+        key={image}
+        className={`slide ${current === index ? 'active' : ''}`}
+        >
+        <img src={image} alt="images" />
+        </div>
+        ))}
+
       </div>
     </div>
   );
 }
-
