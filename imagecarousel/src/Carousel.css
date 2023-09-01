@@ -9,7 +9,11 @@
 
 img{
   width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
 }
+
 .image-slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
