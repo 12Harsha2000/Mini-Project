@@ -3,7 +3,7 @@ import Carousel from './Carousel';
 import './App.css';
 
 const App = () => {
-
+  
   const images = [
     "https://images.pexels.com/photos/5077039/pexels-photo-5077039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/185933/pexels-photo-185933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -15,7 +15,7 @@ const App = () => {
   return (
     <div className="app">
       <h1>Project: Image Carousel</h1>
-      <Carousel images={images} />
+      <div className="image"><Carousel images={images} /></div>
     </div>
   );
 };

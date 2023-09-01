@@ -1,4 +1,7 @@
-
+.image{
+  width: 20%;
+  align-items: center;
+}
 .app {
     text-align: center;
     padding: 20px;
