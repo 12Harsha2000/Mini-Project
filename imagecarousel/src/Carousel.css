@@ -1,7 +1,11 @@
 .carousel {
   position: relative;
-  max-width: 400px;
+  max-width: 200px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
 }
 
 .image-slider {
@@ -27,7 +31,7 @@
 .left-arrow,
 .right-arrow {
   position: absolute;
-  top: 50%;
+  top: 106%;
   transform: translateY(-50%);
   cursor: pointer;
   font-size: 24px;
