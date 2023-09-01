@@ -3,7 +3,6 @@ import Carousel from './Carousel';
 import './App.css';
 
 const App = () => {
-  
   const images = [
     "https://images.pexels.com/photos/5077039/pexels-photo-5077039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/185933/pexels-photo-185933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -26,11 +25,12 @@ const App = () => {
         {galleryOpen && <Carousel images={images} />}
       </div>
 
-    {/* Add the "Open Gallery" button */}
+      {/* Add the "Open Gallery" button */}
       <button className="open-gallery-button" onClick={toggleGallery}>
         {galleryOpen ? 'Close Gallery' : 'Open Gallery'}
-      </button>  
+      </button>
     </div>
   );
 };
+
 export default App;
