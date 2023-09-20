@@ -1,7 +1,7 @@
 .open-gallery-button {
   position: fixed;
-  bottom: 20px;
-  right: 600px;
+  bottom: 48px;
+  right: 702px;
   padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
@@ -15,10 +15,10 @@
   background-color: #0056b3;
 }
 
-
-.image{
+/* .image{
   width: 20%;
-}
+} */
+
 .app {
     text-align: center;
     padding: 20px;
